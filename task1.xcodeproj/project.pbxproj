@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5AC4FF5D1A89FD4300DB25C1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AC4FF5C1A89FD4300DB25C1 /* main.c */; };
+		5AC4FF681A8A115700DB25C1 /* divider.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AC4FF661A8A115700DB25C1 /* divider.c */; };
+		5AC4FF6B1A8A11FA00DB25C1 /* test_divider.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AC4FF691A8A11FA00DB25C1 /* test_divider.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,11 @@
 
 /* Begin PBXFileReference section */
 		5AC4FF591A89FD4300DB25C1 /* task1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = task1; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AC4FF5C1A89FD4300DB25C1 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		5AC4FF5C1A89FD4300DB25C1 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; wrapsLines = 1; };
+		5AC4FF661A8A115700DB25C1 /* divider.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = divider.c; sourceTree = "<group>"; };
+		5AC4FF671A8A115700DB25C1 /* divider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = divider.h; sourceTree = "<group>"; };
+		5AC4FF691A8A11FA00DB25C1 /* test_divider.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_divider.c; sourceTree = "<group>"; };
+		5AC4FF6A1A8A11FA00DB25C1 /* test_divider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test_divider.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				5AC4FF5C1A89FD4300DB25C1 /* main.c */,
+				5AC4FF661A8A115700DB25C1 /* divider.c */,
+				5AC4FF671A8A115700DB25C1 /* divider.h */,
+				5AC4FF691A8A11FA00DB25C1 /* test_divider.c */,
+				5AC4FF6A1A8A11FA00DB25C1 /* test_divider.h */,
 			);
 			path = task1;
 			sourceTree = "<group>";
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AC4FF6B1A8A11FA00DB25C1 /* test_divider.c in Sources */,
 				5AC4FF5D1A89FD4300DB25C1 /* main.c in Sources */,
+				5AC4FF681A8A115700DB25C1 /* divider.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
