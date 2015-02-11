@@ -29,3 +29,25 @@ int divide_by(int number, int divider, char message[]) {
         return 1;
     }
 }
+
+char * NewDivideBy(int number, int divider, char message[]) {
+    
+    int count = 9;
+    char *values = calloc(count, sizeof(*values));
+    
+    int size = 4;
+    if (message[4] == "P") {
+        size = 8;
+    }
+    
+    for (int index = 0; index < size; index++) {
+        values[index] = message[index];
+    }
+    
+    if (number % divider == 0) {
+        printf("%s",values);
+        return values;
+    } else {
+        return "NONE";
+    }
+}
