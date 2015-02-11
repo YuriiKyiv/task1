@@ -51,3 +51,11 @@ char * NewDivideBy(int number, int divider, char message[]) {
         return "NONE";
     }
 }
+
+int NEWDivideBySomething(int number){
+    
+    char *mes = NewDivideBy(number, 3, say_mama);
+    free(mes);
+    
+    return 0;
+}
