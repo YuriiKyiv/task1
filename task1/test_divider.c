@@ -25,3 +25,19 @@ void test_divide_by() {
 void test_divide_by_something(){
     assert(0 == divide_by_something(100));
 }
+
+void NEWTestDivideBySomething(){
+    
+    char *mes = NewDivideBy(3, 3, "MAMA");
+    assert(mes[0] == "M");
+    free(mes);
+    
+    char *mes = NewDivideBy(3, 5, "PAPA");
+    assert(mes[0] == "P");
+    free(mes);
+    
+    char *mes = NewDivideBy(15, 15, "MAMAPAPA");
+    assert(mes[4] == "P");
+    free(mes);
+    
+}
